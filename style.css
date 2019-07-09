@@ -1,0 +1,361 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*My Code*/
+* {
+  text-decoration: none;
+}
+
+body{
+  background-color: #f3f3f3;
+}
+
+header{
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand{
+  font-family: 'Graduate';
+  font-size: 32px;
+  font-weight: 900;
+  color: #C9545A;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+
+}span{
+  color:#107041;
+}
+
+header nav ul{
+  font-family: 'Comfortaa';
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+header nav ul li{
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 0 10px;
+}
+
+header nav ul li a{
+  font-size: 13px;
+  color: #111;
+}
+/*Index*/
+.index-banner{
+  width: 100%;
+  height: calc(100vh  - 100px);
+  background-image: url('img/apartment-cabinet-contemporary-1027508.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display:table;
+}
+.vertical-center{
+  display:table-cell; 
+  vertical-align: middle;
+}
+.index-banner h2{
+  font-family: 'Calligraffitti';
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px #111;
+}
+
+.index-banner h1{
+  font-family: 'Calligraffitti';
+  font-size: 30px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 10px;
+  text-align: center;
+  text-shadow: 3px 3px 4px #111;
+}
+
+/*IMAGES GRID*/
+.xop-section {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.xop-grid {
+	margin: 0 0 0 0;
+	padding: 5px;
+	list-style: none;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(700px,1fr));
+  text-align: center;
+	width: 100%;
+}
+
+.xop-grid:after {
+	clear: both;
+}
+
+.xop-grid:after, .xop-box:before {
+	content: '';
+	display: table;
+}
+
+.xop-grid li {
+	width: auto;
+	height: 33vh;
+	display: inline-block;
+}
+
+.xop-box {
+  display: flex;
+  justify-content: center;
+	width: 100%;
+	height: 100%;
+  position: relative;
+  cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out; 
+}
+
+.xop-box:hover > .overlay{
+  position: absolute;
+  top: 0;
+  width:100%;
+  height:100%;
+  left: 0;
+  background-color:#000;
+  opacity:0.5;
+  z-index: 100;
+  display: block;
+}
+
+.xop-box:hover .xop-info{
+  opacity: 1
+}
+
+.xop-img-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+  url(../img/img-box-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.xop-img-2 {
+	background: linear-gradient( rgba(48, 41, 41, 0.5), rgba(0, 0, 0, 0.10)), /* bottom, image */
+  url(../img/img-box-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.xop-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+  url(../img/img-box-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.xop-img-4 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)), /* bottom, image */
+  url(../img/img-box-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.xop-info {
+  display:block ;
+  width: 100%;
+  position: center;
+  height: 100%;
+  opacity: 0;
+}
+
+.xop-info h3 {
+	font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+	font-size: 42px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.5;
+}
+
+.xop-info p {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	padding: 4px 5px;
+  margin: 0 30px;
+  text-align: center;
+	font-size: 14px;
+	line-height: 2;
+}
+/*Footer*/
+footer{
+  width:calc(100% - 40px);
+  padding: 20px 20px;
+  background-color: #111;
+  overflow: hidden;
+}
+
+footer ul li a:hover{
+  color: #cccccc;
+}
+
+footer ul{
+  width: fit-content;
+  float:left;
+  padding-left: 5px;
+}
+
+footer ul li{
+  display: block;
+  list-style: none;
+}
+
+footer ul li a{
+ font-family:'Comfortaa';
+ font-size:  20px;
+ color: #fff;
+ line-height: 25px;
+}
+
+.footer-links-main{
+  display: inline;
+}
+
+.footer-sm{
+  width: 40px;
+  float: right;
+}
+
+.footer-sm img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.grid{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(auto-fit,minmax(25em,1fr));  
+}
+ 
+.grid-item{
+  background-color: #cccccc;
+}
