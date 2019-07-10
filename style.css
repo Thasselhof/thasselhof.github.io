@@ -475,10 +475,7 @@ footer ul li a{
     opacity: 0;
   }
 }
-#section05{
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-}
+
 .demo a {
   position: absolute;
   bottom: 0px;
