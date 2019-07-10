@@ -336,11 +336,9 @@ header nav ul li a:hover{
   background-size: cover;
 }
 
-.xop-info {
-  display:block ;
-  width: 100%;
-  height: 100%;
-  display: none; 
+div.xop-info {
+  text-align: center;
+  position: relative;
 }
 
 .xop-info h3 {
@@ -349,13 +347,17 @@ header nav ul li a:hover{
   text-align: center;
   color: #fff;
 	font-size: 70px;
-	margin: 0 30px;
-	padding: 100px 0 0 0;
+	margin: 0 auto;
   line-height: 1.5;
   text-shadow: 2px 2px 4px #111;
-
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
+/*
 .xop-info p {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #fff;
@@ -366,6 +368,7 @@ header nav ul li a:hover{
 	font-size: 14px;
   line-height: 2;
 }
+*/
 /*Footer*/
 footer{
   width:calc(100% - 40px);
