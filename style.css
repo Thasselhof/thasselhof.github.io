@@ -294,10 +294,13 @@ header nav ul li a:hover{
 
 @media (min-width:1600px){
   .xop-box:hover{
-    -webkit-filter: brightness(105%);
+    -webkit-filter: brightness(115%);
   }
-  .xop-box{
+  .xop-img{
     -webkit-filter: brightness(70%);
+
+  }
+  .xop-box .xop-img{
     -webkit-transition: 0.3s ease-in-out, 
     -webkit-transform 0.3s ease-in-out;
 	-moz-transition:  0.3s ease-in-out, 
