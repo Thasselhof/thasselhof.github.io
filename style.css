@@ -224,6 +224,9 @@ header nav ul li a:hover{
     height: 100%;
     opacity: 1;
   }
+  #section05{
+    display: none;
+  }
 }
 
 @media (max-width:1315px){
@@ -302,6 +305,7 @@ header nav ul li a:hover{
     transition: all 0.3s ease-in-out, 
     transform 0.3s ease-in-out; 
   }
+
 }
 
 .xop-img-1 {
