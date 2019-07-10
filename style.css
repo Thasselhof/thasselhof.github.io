@@ -349,8 +349,9 @@ div.xop-info {
 }
 
 .xop-info h3 {
-	font-family: 'Pacifico', cursive;
-  font-weight: 400;
+  font-family: 'Pacifico', cursive;
+  font-style: italic;
+  font-weight: 100;
   text-align: center;
   color: #fff;
 	font-size: 70px;
