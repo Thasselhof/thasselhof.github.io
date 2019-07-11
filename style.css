@@ -25,6 +25,8 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    scroll-behavior: smooth;
+    
 }
 
 body {
@@ -137,8 +139,7 @@ header nav ul{
   width: fit-content;
 }
 header nav ul li{
-  display: inline-block;
-  float: left;
+  display: inline;
   list-style: none;
   padding: 0 10px;
 }
