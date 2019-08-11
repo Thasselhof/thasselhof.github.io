@@ -1,0 +1,125 @@
+.grid{
+  display: grid;
+  grid-auto-rows: 600px;
+  grid-gap: 2px;
+  grid-auto-flow: row dense;
+
+}
+ 
+.grid-item{
+  background-color: #cccccc;
+}
+
+.grid-item__Rtwo {
+  grid-row: span 2;
+}
+
+.grid-gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media all and (min-width: 320px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media all and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+a.image_close,
+a.image_prev,
+a.image_next {
+  z-index: 999;
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  color: white;
+  font-size: 36px;
+}
+
+a.image_close {
+  top: 1%;
+  right: 1%
+}
+
+a.image_close::after {
+  content: '\00d7';
+}
+
+a.image_prev,
+a.image_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.image_prev {
+  left: 2%;
+}
+
+a.image_next {
+  right: 2%;
+}
+
+a:target ~ a.image_close,
+a:target ~ a.image_prev,
+a:target ~ a.image_next {
+  visibility: visible;
+}
+
+a:target > img.image_thumb + span.image_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+}
+
+span.image_full {
+  cursor: initial;
+}
+/* This is the end of CSSBox */
